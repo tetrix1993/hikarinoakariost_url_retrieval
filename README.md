@@ -15,9 +15,9 @@ Hikarinoakariost URL Retrieval is a simple command line program to read the [web
 ![image001.png](/images/img001.png)
 4. Select a specific entry you want to download by entering the choice.
 5. After you entered your choice, it will print the download link to the screen.
-![image002.png](/image/img002.png)
+![image002.png](/images/img002.png)
 6. If you want to access the other pages of the website, enter 0.
 7. The program will prompt you whether to go the next page or not.
-![image003.png](/image/img003.png)
+![image003.png](/images/img003.png)
 8. If you enter 'Y', it will load the next page.
 9. If you enter other values, the program will exit.
