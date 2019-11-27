@@ -1,17 +1,10 @@
 import urllib.request
-#import argparse
 import math
 from myutil.util import create_directory
 from myutil.util import download_image
 from myutil.util import get_response
 from myutil.util import get_response_with_header
 from myutil.util import is_file_exists
-
-#parser = argparse.ArgumentParser()
-#parser.add_argument('ID', help = 'ID')
-#parser.add_argument('P', type = int, help = 'number of processes')
-#parser.add_argument('L', type = int, help = 'last page number')
-#args = parser.parse_args()
 
 MAIN_PAGE_PREFIX = "https://hikarinoakariost.info/page/"
 MAIN_PAGE_SUFFIX = "/"
@@ -39,7 +32,6 @@ def process_song_page(choice, text_block):
     split2 = response.split(OUT_LINK_PREFIX)
     if len(split2) < 2:
         return
-    #num_choices = 0
     for i in range(1, len(split2), 1):
         split3 = split2[i].split('</td>')[0]
         if NOOPENER_NOREFERRER in split3:
@@ -50,7 +42,6 @@ def process_song_page(choice, text_block):
             code = split3.split('"')[0]
             out_link = base64_decode(code)
             print(str(i) + " - " + host + " " + out_link)
-            #num_choices = num_choices + 1
     
 def base64_decode(data):
     b64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
@@ -100,7 +91,6 @@ def get_title(choice, split2):
     return title_temp[1].split('">')[0]
 
 def run():
-    #print(base64_decode('aHR0cHM6Ly9vdW8uaW8vR0txNDhM'))
     page = 1
     choice = 1
     goto_next_page = True

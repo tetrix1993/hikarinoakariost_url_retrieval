@@ -4,7 +4,7 @@
 Hikarinoakariost URL Retrieval is a simple command line program to read the [Hikarinoakariost website](https://hikarinoakariost.info/), written specifically to bypass the 3-seconds wait to access the download link. The program is written in Python 3.
 
 ## Setting Up
-1. Download and install the latest version of Python (3.7.4).
+1. Download and install the latest version of [Python](https://www.python.org/downloads/)
 2. Open the Command Prompt (for Windows) or Terminal (for MacOS).
 3. Run the following command: `pip install requests`
 
